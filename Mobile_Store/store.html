@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <style>
+      #mobile_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      #mobile_list img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- On store page append all mobiles inside div with Id :- "mobile_list",
+Each mobile card will have class :- "mobile"
+every remove button will have class :- "remove"
+Sort from low to high button Id:- "sort_lth"
+sort from high to low button Id:- "sort_htl"
+select tag fro filtering will have Id:- "select_filter"
+Must provide these brands as options :- 
+a. apple
+b. oneplus
+c. nokia 
+// Do not add extra text to price, only number should be there as shown below
+// Price: 60000 (wrong)
+// 60000 (Right)
+-->
+
+    <div id="navbar">
+      <button id="sort_lth">Price - Low to High</button>
+      <button id="sort_htl">Price - High to Low</button>
+      <select id="select_filter">
+        <option value="">Filter By Brand</option>
+        <option value="apple">Apple</option>
+        <option value="realme">Realme</option>
+        <option value="samsung">Samsung</option>
+      </select>
+    </div>
+
+    <div id="mobile_list"></div>
+  </body>
+</html>
+
+<script src="./scripts/store.js"></script>
