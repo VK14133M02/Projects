@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <style>
+      #navbar {
+        display: flex;
+        justify-content: space-around;
+      }
+      #sorting {
+        display: flex;
+        justify-content: space-around;
+      }
+      #hotels_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      #hotels_list img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h2>Hotel App</h2>
+      <!-- the search-box id:- "query"        
+ - the log-in and sign-up link will have ids:- "login" and "signup" -->
+      <input
+        type="text"
+        id="query"
+        placeholder="Search By City"
+        onkeypress="enter(event)"
+      />
+      <a href="./login.html">Login</a>
+      <a href="./signup.html">Signup</a>
+    </div>
+    <div id="sorting">
+      <!-- sort by price low to high Id:- "sort_lth"
+ - sort by price high to low Id:- "sort_htl"
+ - Filter Ac hotels Id:- "filter_ac"
+ - Filter Non Ac hotels Id:- "filter_nonac" -->
+      <button id="sort_lth" onclick="price_low_to_high()">
+        Price - Low to High
+      </button>
+      <button id="sort_htl" onclick="price_high_to_low()">
+        Price - High to Low
+      </button>
+      <button id="excillent" onclick="excillentHotel()">Excillent</button>
+      <button id="very_good" onclick="veryGoodHotel()">Very Good</button>
+    </div>
+    <div id="hotels_list">
+      <!-- - Append all fetched hotels inside div with id:- "hotels_list"
+ - Every hotel card will have id:-  "hotel"
+ - The book now button will have class as "book" -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
