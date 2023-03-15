@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports | Home Page</title>
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <nav></nav>
+
+    <div>
+      <input
+        oninput="debouncing(main,1000)"
+        type="text"
+        placeholder="Search Player By Name"
+        id="searchPlayer"
+      />
+    </div>
+
+    <div id="player"></div>
+
+    <div class="details"></div>
+
+    <div class="overly" onclick="closeModal()"></div>
+
+    <div class="paggination">
+      <button onclick="previous()">< Previous</button>
+      <button onclick="next()">Next ></button>
+    </div>
+  </body>
+</html>
+
+<script src="./script/index.js"></script>
+
+<script type="module">
+  import { navbar } from "./script/navbar.js";
+  document.querySelector("nav").innerHTML = navbar();
+</script>

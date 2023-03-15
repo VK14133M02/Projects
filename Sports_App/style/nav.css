@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+  color: blue;
+}

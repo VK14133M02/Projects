@@ -1,0 +1,63 @@
+#player {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#player img {
+  width: 50%;
+}
+
+#player button {
+  cursor: pointer;
+}
+
+.details {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.openModal {
+  top: 50%;
+  z-index: 9;
+}
+
+.details img {
+  width: 25%;
+}
+
+.overly {
+  width: 100%;
+  height: 100vw;
+  background-color: #f0f8ff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.showOverly {
+  opacity: 1;
+  z-index: 1;
+}
+
+.paggination {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
