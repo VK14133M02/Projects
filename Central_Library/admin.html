@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central Library | Admin</title>
+    <link rel="stylesheet" href="./style/admin.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./admin.html">Admin Dashboard</a>
+      <a href="./adminLogin.html">Login</a>
+    </nav>
+
+    <div class="overly"></div>
+
+    <div>
+      <form>
+        <input type="url" placeholder="Image.url" id="image" />
+        <input type="text" placeholder="Book Name" id="name" />
+        <input type="text" placeholder="Author" id="author" />
+        <input type="text" placeholder="Genre" id="genre" />
+        <input type="number" placeholder="Edition" id="edition" />
+        <input type="text" placeholder="Publisher" id="publisher" />
+        <input type="number" placeholder="Cost" id="cost" />
+        <input type="submit" value="Add Book" />
+      </form>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Editoin</th>
+            <th>Publisher</th>
+            <th>Cost</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="editForm"></div>
+  </body>
+</html>
+
+<script src="./script/admin.js"></script>
+
+<!-- <input type="text" placeholder="Book Name" id="updatedName" />
+      <input type="text" placeholder="Author" id="updatedAuthor" />
+      <input type="text" placeholder="Genre" id="updatedGenre" />
+      <input type="number" placeholder="Edition" id="updatedEdition" />
+      <input type="text" placeholder="Publisher" id="updatedPublisher" />
+      <input type="number" placeholder="Cost" id="updatedCost" /> -->
+<!-- <button id="updateDetails">Update Details</button> -->

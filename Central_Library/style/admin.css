@@ -1,0 +1,74 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav a {
+  font-size: 20px;
+  font-family: lato;
+  font-weight: 600;
+  color: black;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+thead > tr {
+  background-color: aquamarine;
+}
+
+tbody img {
+  width: 10%;
+}
+
+.editForm {
+  width: 20%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.openEditForm {
+  top: 50%;
+  z-index: 9;
+}
+
+.overly {
+  background-color: rgb(165, 245, 218);
+  width: 30%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.showOverly {
+  opacity: 1;
+  z-index: 1;
+}

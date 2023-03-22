@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav button {
+  font-size: 20px;
+  font-family: lato;
+  font-weight: 600;
+  color: black;
+  padding: 20px;
+}
+
+nav button:hover {
+  color: blue;
+}
